@@ -12,9 +12,6 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'bootsnap', '>= 1.1.0', require: false
 
-# Make errors better looking
-gem 'better_errors', '~> 2.5', '>= 2.5.1' 
-
 # CSS framework based on Flexbox
 gem 'bulma-rails', '~> 0.7.5'
 
@@ -35,6 +32,8 @@ group :development do
   gem 'guard', '~> 2.15', '>= 2.15.1'
   # Reloads browser when 'view' files are modified
   gem 'guard-livereload', '~> 2.5', '>= 2.5.2'
+  # Make errors better looking
+  gem 'better_errors', '~> 2.5', '>= 2.5.1' 
 end
 
 group :test do
