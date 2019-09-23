@@ -12,6 +12,16 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'bootsnap', '>= 1.1.0', require: false
 
+# Make errors better looking
+gem 'better_errors', '~> 2.5', '>= 2.5.1' 
+
+# CSS framework based on Flexbox
+gem 'bulma-rails', '~> 0.7.5'
+
+# Simple form
+gem 'simple_form', '~> 4.1'
+
+
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
@@ -21,6 +31,10 @@ group :development do
   gem 'listen', '>= 3.0.5', '< 3.2'
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+  # Live reloading when file system modifications
+  gem 'guard', '~> 2.15', '>= 2.15.1'
+  # Reloads browser when 'view' files are modified
+  gem 'guard-livereload', '~> 2.5', '>= 2.5.2'
 end
 
 group :test do
