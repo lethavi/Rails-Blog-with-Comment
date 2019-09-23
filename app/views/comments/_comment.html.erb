@@ -1,0 +1,13 @@
+<div class="box">
+  <article class="media">
+    <div class="media-content">
+      <div class="content">
+        <p>
+          <strong><%= comment.name%>: </strong>
+          <%= comment.comment %>
+        </p>
+      </div>
+    </div>
+    <%= link_to 'Delete', post_comment_path(comment.post, comment), method: :delete, confirm: { data: "Are you sure want to delete this comment?" }, class: "button is-danger" %>
+  </article>
+</div>
